@@ -17,3 +17,4 @@ jobs:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: yowainwright/gh-e2e-ex
           event-type: execute_e2e
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
